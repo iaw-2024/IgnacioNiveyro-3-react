@@ -1,0 +1,33 @@
+Primero hice npm install express ya que index.js usa la libreria
+si hacia npm start solo inicializaba el index.js con express
+no iniciaba react ? como en el carrusel q dio el profe
+buscando en internet encontre que si
+npm list react-scripts esta 'empty'
+tengo que hacer npm install react-scripts
+luego npm start
+igualmente solo ejecuta express, no entiendo como abrir react
+
+Ok.. en package.json en el start tengo que 
+  "scripts": {
+    "start-express": "node api/index.js",
+    "start-react": "react-scripts start"
+  },
+
+  con npm run start-express ejecuto express q se encuentra en node api/index.js
+  con npm run start-react ejecuto react
+
+  bueno, hasta aca podia ejecutar react y express pero me tiraba
+  el siguiente error
+
+  Module not found: Error: Can't resolve 'react-dom' in 'C:\Users\Ignacio\Desktop\IAW\Ejercicios\3\IgnacioNiveyro-3-react\src'
+
+entonces hice npm install react-dom
+
+El problema ahora es que no puedo hacer un fetch a una URL
+con un puerto distinto a donde esta react (o eso entendí),
+el error que daba es
+Pedido de origen cruzado bloqueado: La política de mismo origen no permite leer el recurso remoto en http://localhost:3001/datos. (Razón: encabezado CORS ‘Access-Control-Allow-Origin’ faltante). Código de estado: 200.
+
+Solución CHAT GPT:
+
+npm install cors
