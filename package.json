@@ -5,8 +5,11 @@
   "main": "api/index.js",
   "scripts": {
     "start-express": "node api/index.js",
+    "build-react": "react-scripts build",
     "start-react": "react-scripts start"
-  },
+  }
+  
+  ,
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
