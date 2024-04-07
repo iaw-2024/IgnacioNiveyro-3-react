@@ -13,6 +13,8 @@ Ok.. en package.json en el start tengo que
     "start-react": "react-scripts start"
   },
 
+
+
   con npm run start-express ejecuto express q se encuentra en node api/index.js
   con npm run start-react ejecuto react
 
