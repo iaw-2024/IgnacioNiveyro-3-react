@@ -12,7 +12,7 @@ export default function TablaPersonas() {
     
 
     useEffect(() => {
-        fetch('http://localhost:3001/datos')
+        fetch('/datos')
             .then(res => res.json())
             .then(data => setPersonas(data))
             .catch(error => console.error('Error fetching data:', error));
