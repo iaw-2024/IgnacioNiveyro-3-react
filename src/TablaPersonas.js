@@ -22,7 +22,7 @@ export default function TablaPersonas() {
     return (
         <div>
             {<Formulario handleSubmit={handleSubmit}/>}
-            <h1>Tabla Personas</h1>
+            <h1 className="title">Tabla Personas</h1>
             <table className="tabla-personas">
                 <thead>
                     <tr>

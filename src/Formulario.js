@@ -8,8 +8,8 @@ export default function Formulario({handleSubmit}) {
     };
     
     return (
-        <div>
-            <button onClick={handleSubmitClick}>Agregar Persona</button>
+        <div className='form'>
+            <h1 className='title'>Formulario</h1>
             <div>
                 <label htmlFor="nombre">Nombre:</label>
                 <input 
@@ -26,6 +26,7 @@ export default function Formulario({handleSubmit}) {
                     required 
                 />
             </div>
+            <button className='boton' onClick={handleSubmitClick}>Agregar Persona</button>
         </div>
     );
 }
