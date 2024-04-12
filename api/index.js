@@ -1,7 +1,16 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 
-app.get("/datos", (req, res) => res.send("Express on Vercel!"));
+const datos = require('../public/datos_estaticos.json');
+
+// Configurar el middleware CORS
+app.use(cors());
+
+app.get("/datos", (req, res) => {
+    res.json(datos);
+});
+
 app.use(express.static('public'))
 
 

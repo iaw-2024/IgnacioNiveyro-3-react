@@ -1,0 +1,54 @@
+.tabla-personas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #95a495;
+    border-collapse: collapse;
+    font: 1em sans-serif;
+}
+
+.tabla-personas th, .tabla-personas td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabla-personas th {
+    background-color: #f2f2f2;
+}
+
+.tabla-personas tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    font: 1em sans-serif;
+
+}
+.boton {
+    background-color: #769477; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.title{
+    text-align: center;
+}
+.App{
+    background-color: rgb(200, 200, 196);
+}
